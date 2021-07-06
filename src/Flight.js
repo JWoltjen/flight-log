@@ -1,12 +1,28 @@
-import React from 'react'
+import React, {useState, useContext} from 'react'
+import { FlightContext } from './FlightContext'
 
-function Flight({date, plane, id, description}) {
+function Flight({date, id, description, kills, wingmen}) {
+    const [flights, setFlights] = useContext(FlightContext)
+
+    const deleteFlight = () => {
+        console.log('you clicked me')
+        setFlights(flights.filter((el) => el.id !== flights.id));
+  }
+
     return (
-        <div>
-            <h3>{date}</h3>
-            <h3>{id}</h3>
-            <h3>{plane}</h3>
-            <p>{description}</p>
+        <div className='flight-card'>
+            <h3 className='flight-card-date'>{date}</h3>
+            <p className='flight-card-description'>{description}</p>
+            <div className='flight-card-stats'>
+                <ul>
+                <li>Kills: {kills}</li> 
+                <li>Wingmen: {wingmen}</li>
+                </ul>
+            </div>
+            <span className='flight-card-buttons'>
+                <button>Edit</button>
+                <button onClick={deleteFlight}>Delete</button>
+            </span>
         </div>
     )
 }
