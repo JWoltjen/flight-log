@@ -2,11 +2,9 @@ import React from 'react'
 
 function Flight({date, plane, id, description}) {
     return (
-        <div>
-            <h3>{date}</h3>
-            <h3>{id}</h3>
-            <h3>{plane}</h3>
-            <p>{description}</p>
+        <div className='flight-card'>
+            <h3 className='flight-card-date'>{date}</h3>
+            <p className='flight-card-description'>{description}</p>
         </div>
     )
 }
