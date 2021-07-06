@@ -53,13 +53,19 @@ nav {
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: large;
+  min-height: 50%;
   font-family: "Source Code Pro", monospace;
 }
 .flight-card-stats {
   padding-left: 1rem;
   padding-right: 1rem;
-  font-size: large;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  color: red;
   font-family: "Source Code Pro", monospace;
+  margin-left: 1rem;
+  z-index: 100;
 }
 
 .flight-card-buttons {

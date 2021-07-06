@@ -9,7 +9,7 @@ function FlightLog() {
          return (
             <div className='flight-log'>
             {flights.map(flight => (
-                <Flight date={flight.date} plane={flight.plane} id={flight.id} description={flight.description} />
+                <Flight date={flight.date} id={flight.id} description={flight.description} kills={flight.kills} wingmen={flight.wingmen} />
             ))}
             </div>
     )
@@ -18,7 +18,7 @@ function FlightLog() {
     return (
             <div className='flight-log'>
             {flights.map(flight => (
-                <Flight date={flight.date} plane={flight.plane} id={flight.id} description={flight.description} />
+                <Flight date={flight.date} id={flight.id} description={flight.description} kills={flight.kills} wingmen={flight.wingmen} />
             ))}
             </div>
     )

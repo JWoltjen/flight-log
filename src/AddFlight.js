@@ -33,9 +33,9 @@ const AddFlight = () => {
            <input type='text' className='add-flight-description' name='description' placeholder="enter description" value={description} onChange={updateName}/>
              <span className='add-flight-kills'>
                 <label for="kills">Kills</label>
-                <input type='number' id='kills' name='kills' min='1' max='5' onChange={updateKills}/>
+                <input type='number' id='kills' name='kills' min='1' max='5' value={kills} onChange={updateKills}/>
                 <label for='wingmen'>Wingmen</label>
-            <input type='number' id='wingmen' name='wingmen' min='0' max='4' onChange={updateWingmen}/>
+            <input type='number' id='wingmen' name='wingmen' min='0' max='4' value={wingmen} onChange={updateWingmen}/>
             </span>
            <button className='add-flight-button'>Submit</button>
        </form>
