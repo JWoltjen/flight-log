@@ -6,10 +6,12 @@ function FlightLog() {
     const [flights, setFlights] = useContext(FlightContext)
 
     return (
-        <div className='flight-log'>
-           {flights.map(flight => (
-               <Flight date={flight.date} plane={flight.plane} id={flight.id} description={flight.description} />
-           ))}
+        <div className='flight-log-container'>
+            <div className='flight-log'>
+            {flights.map(flight => (
+                <Flight date={flight.date} plane={flight.plane} id={flight.id} description={flight.description} />
+            ))}
+            </div>
         </div>
     )
 }
