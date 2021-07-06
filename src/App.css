@@ -55,6 +55,12 @@ nav {
   font-size: large;
   font-family: "Source Code Pro", monospace;
 }
+.flight-card-stats {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: large;
+  font-family: "Source Code Pro", monospace;
+}
 
 .flight-card-buttons {
   position: absolute;
@@ -79,6 +85,7 @@ button {
   justify-content: center;
   padding-bottom: 2rem;
   padding-top: 2rem;
+  margin-bottom: 2rem;
   border-radius: 15px;
   background-color: blanchedalmond;
   box-shadow: 10px 5px 5px black;
@@ -108,6 +115,11 @@ button {
 }
 .add-flight-button {
   margin-left: 1rem;
+}
+.add-flight-kills {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer {
