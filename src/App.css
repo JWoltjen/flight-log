@@ -9,6 +9,7 @@
   align-items: center;
   margin: 0;
   padding: 0;
+  background-color: chocolate;
 }
 
 nav {
@@ -39,6 +40,7 @@ nav {
   justify-content: center;
   background-color: blanchedalmond;
   position: relative;
+  box-shadow: 10px 5px 5px black;
 }
 
 .flight-card-date {
@@ -67,4 +69,50 @@ button {
   height: 30px;
   font-family: "Teko", sans-serif;
   border-radius: 5px;
+}
+
+.add-flight {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-radius: 15px;
+  background-color: blanchedalmond;
+  box-shadow: 10px 5px 5px black;
+}
+
+.add-flight-date {
+  padding: 0.5rem 0rem;
+  font-family: "Teko", sans-serif;
+  font-size: larger;
+  width: 150px;
+  margin-top: 0;
+  margin-left: 1rem;
+  border-radius: 15px;
+  border: none;
+  background-color: blanchedalmond;
+}
+
+.add-flight-description {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  min-height: 10vh;
+  max-height: 35vh;
+  padding-right: 1rem;
+  font-family: "Source Code Pro", monospace;
+}
+.add-flight-button {
+  margin-left: 1rem;
+}
+
+.footer {
+  height: 25px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }

@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import FlightLog from './FlightLog'
 import {FlightProvider} from './FlightContext'
 import AddFlight from './AddFlight';
-
+import Footer from './Footer'
 function App() {
   return (
   <FlightProvider>
@@ -11,6 +11,7 @@ function App() {
       <Navbar />
       <FlightLog/>
       <AddFlight/>
+      <Footer/>
     </div>
   </FlightProvider>
   );

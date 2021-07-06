@@ -21,9 +21,9 @@ const AddFlight = () => {
     }
     return (
        <form onSubmit={addFlight} className='add-flight'>
-           <input type='date' className='date' name='date' value={date} onChange={updateDate}/>
-           <input type='text' className='description' name='description' value={description} onChange={updateName}/>
-           <button>Submit</button>
+           <input type='date' className='add-flight-date' name='date' value={date} onChange={updateDate}/>
+           <input type='text' className='add-flight-description' name='description' value={description} onChange={updateName}/>
+           <button className='add-flight-button'>Submit</button>
        </form>
     )
 }
