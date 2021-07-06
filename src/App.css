@@ -49,6 +49,7 @@ nav {
 .flight-card-description {
   padding: 2rem 1rem;
   font-size: large;
+  font-family: "Source Code Pro", monospace;
 }
 
 .flight-card-buttons {

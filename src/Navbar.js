@@ -6,6 +6,7 @@ function Navbar() {
     return (
         <nav>
             <h3>Flight Log</h3>
+            <h1>Wolf's Flight Log</h1>
             <p>Number of Flights: {flights.length}</p>
         </nav>
     )
