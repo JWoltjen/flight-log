@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './Navbar'
 import FlightLog from './FlightLog'
 import {FlightProvider} from './FlightContext'
+import AddFlight from './AddFlight';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Navbar />
       <FlightLog/>
+      <AddFlight/>
     </div>
   </FlightProvider>
   );
