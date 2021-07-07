@@ -5,7 +5,6 @@ function Flight({date, id, description, kills, wingmen}) {
     const [flights, setFlights] = useContext(FlightContext)
 
     const deleteFlight = () => {
-        console.log('you clicked me')
         setFlights(flights.filter((el) => el.id !== flights.id));
   }
 
