@@ -34,6 +34,15 @@ nav {
   align-items: center;
   background-color: chocolate;
 }
+.flight-log-carousel {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 65vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 
 .logo {
   display: flex;
@@ -41,7 +50,7 @@ nav {
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-  object-fit: contain;
+  object-fit: scale-down;
   margin: 1rem 2rem;
   width: 420px;
   height: auto;

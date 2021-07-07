@@ -9,20 +9,20 @@ import bigiron2 from './bigironII.png'
 
 function Logo() {
     return (
-    <Carousel>
-        <div className='flight-log-logo'>
+    <Carousel className='flight-log-carousel'>
+        <div>
             <img className='logo' src={bigIron} alt='a mig and a sabre merge at very very close range'/>
         </div>
-        <div className='flight-log-logo'>
+        <div>
             <img className='logo' src={bigiron1} alt='a mig and a sabre merge at very very close range'/>
         </div>
-        <div className='flight-log-logo'>
+        <div>
             <img className='logo' src={bigiron2} alt='a mig and a sabre merge at very very close range'/>
         </div>
-        <div className='flight-log-logo'>
+        <div>
             <img className='logo' src={bigiron3} alt='a mig and a sabre merge at very very close range'/>
         </div>
-         <div className='flight-log-logo'>
+         <div>
             <img className='logo' src={bigiron4} alt='a mig and a sabre merge at very very close range'/>
         </div>
     </Carousel>
