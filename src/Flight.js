@@ -6,6 +6,7 @@ function Flight({date, id, description, kills, wingmen, losses}) {
 
     const deleteFlight = () => {
         setFlights(flights.filter((el) => el.id !== flights.id));
+        
   }
 
     return (

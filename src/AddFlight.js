@@ -35,6 +35,7 @@ const AddFlight = () => {
                 wingmen: wingmen, 
                 losses: losses} ]
         ))
+        localStorage.setItem('flights', JSON.stringify(flights))
     }
     return (
        <form onSubmit={addFlight} className='add-flight'>
