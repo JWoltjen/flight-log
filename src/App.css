@@ -40,20 +40,22 @@ nav {
   justify-content: center;
   flex-direction: column;
   height: 65vh;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  object-fit: scale-down;
 }
 
 .logo {
   display: flex;
-  border: solid 2px black;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
   object-fit: scale-down;
-  margin: 1rem 2rem;
-  width: 420px;
-  height: auto;
+}
+@media only screen and (min-width: 900px) {
+  .flight-log-carousel {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
 }
 
 .flight-card {
