@@ -1,24 +1,23 @@
-import React, {useState, createContext} from 'react'
+import React, {useState, createContext, useEffect} from 'react'
 
 export const FlightContext = createContext(); 
 
 export const FlightProvider = props => {
-    const [flights, setFlights] = useState([
-        {
-            date: 'July 4, 2021',
-            id: 13214, 
-            description: 'I flew a plane from Gudata to the Bullseye and back.',
-            kills: 1, 
-            wingmen: 0, 
-        }, 
-        {
-            date: 'July 3, 2021', 
-            id: 13213, 
-            description: 'I flew a Sabre from Gudata to Sochi and back again.', 
-            kills: 0, 
-            wingmen: 3, 
-        }
-    ])
+    const initialState = JSON.parse(localStorage.getItem('flights')) ||
+    [
+        {date: 'July 4, 2021', 
+        description: 'this is a test', 
+        id: 1232,
+        kills: 0, 
+        wingmen: 0, 
+        losses: 0}
+    ]
+
+    const [flights, setFlights] = useState(initialState)
+    
+    useEffect(() => {
+        localStorage.setItem("flights", JSON.stringify(flights))
+    }, [flights])
 
     return (
        <FlightContext.Provider value={[flights, setFlights]}>

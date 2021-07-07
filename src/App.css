@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+ul {
+  list-style-type: none;
+}
 .App {
   display: flex;
   justify-content: center;
@@ -10,6 +13,7 @@
   margin: 0;
   padding: 0;
   background-color: chocolate;
+  z-index: -1;
 }
 
 nav {
@@ -30,6 +34,29 @@ nav {
   align-items: center;
   background-color: chocolate;
 }
+.flight-log-carousel {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 65vh;
+  object-fit: scale-down;
+}
+
+.logo {
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  object-fit: scale-down;
+}
+@media only screen and (min-width: 900px) {
+  .flight-log-carousel {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+}
 
 .flight-card {
   margin: 1rem;
@@ -41,6 +68,8 @@ nav {
   background-color: blanchedalmond;
   position: relative;
   box-shadow: 10px 5px 5px black;
+  text-overflow: ellipsis;
+  overflow-y: scroll;
 }
 
 .flight-card-date {
@@ -52,6 +81,7 @@ nav {
 .flight-card-description {
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-bottom: 1rem;
   font-size: large;
   min-height: 50%;
   font-family: "Source Code Pro", monospace;
@@ -59,6 +89,7 @@ nav {
 .flight-card-stats {
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-bottom: 1rem;
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -69,9 +100,9 @@ nav {
 }
 
 .flight-card-buttons {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
+  margin-left: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 button {
@@ -117,6 +148,7 @@ button {
   min-height: 10vh;
   max-height: 35vh;
   padding-right: 1rem;
+  padding-bottom: 1rem;
   font-family: "Source Code Pro", monospace;
 }
 .add-flight-button {
