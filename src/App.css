@@ -13,6 +13,7 @@ ul {
   margin: 0;
   padding: 0;
   background-color: chocolate;
+  z-index: -1;
 }
 
 nav {
@@ -32,6 +33,18 @@ nav {
   flex-direction: column;
   align-items: center;
   background-color: chocolate;
+}
+
+.logo {
+  display: flex;
+  border: solid 2px black;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  margin: 1rem 2rem;
+  width: 360px;
+  height: auto;
 }
 
 .flight-card {
