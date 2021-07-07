@@ -1,7 +1,7 @@
 import React, {useState, useContext} from 'react'
 import { FlightContext } from './FlightContext'
 
-function Flight({date, id, description, kills, wingmen}) {
+function Flight({date, id, description, kills, wingmen, losses}) {
     const [flights, setFlights] = useContext(FlightContext)
 
     const deleteFlight = () => {
@@ -16,6 +16,7 @@ function Flight({date, id, description, kills, wingmen}) {
                 <ul>
                 <li>Kills: {kills}</li> 
                 <li>Wingmen: {wingmen}</li>
+                <li>Losses: {losses}</li>
                 </ul>
             </div>
             <span className='flight-card-buttons'>

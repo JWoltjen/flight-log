@@ -57,6 +57,7 @@ nav {
 .flight-card-description {
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-bottom: 1rem;
   font-size: large;
   min-height: 50%;
   font-family: "Source Code Pro", monospace;
@@ -64,6 +65,7 @@ nav {
 .flight-card-stats {
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-bottom: 1rem;
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -74,8 +76,9 @@ nav {
 }
 
 .flight-card-buttons {
-  bottom: 1rem;
-  left: 1rem;
+  margin-left: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 button {
@@ -121,6 +124,7 @@ button {
   min-height: 10vh;
   max-height: 35vh;
   padding-right: 1rem;
+  padding-bottom: 1rem;
   font-family: "Source Code Pro", monospace;
 }
 .add-flight-button {
